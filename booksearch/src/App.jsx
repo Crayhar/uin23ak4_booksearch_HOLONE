@@ -6,12 +6,28 @@ import Layout from './components/Layout'
 import { Link } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <Layout>
+    <>
+    <header>
+      <ul>
+        <li>Home</li>
+        <li>Collection</li>
+      </ul>
+    </header>
+    <main>
+      <form action="input">
+        <label htmlFor="search">Search: </label>
+        <input type="text" />
+      </form>
 
-    </Layout>
+      <article>
+        <h2>boktittel</h2>
+        <img src="" alt="bilde" />
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+      </article>
+    </main>
+    </>
   )
 }
 
