@@ -6,8 +6,8 @@ export default function Layout(){
         <header>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Characters</li>
+                    <a>Home</a>
+                    <a>Characters</a>
                 </ul>
             </nav>
         </header>
