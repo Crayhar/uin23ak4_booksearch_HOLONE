@@ -1,16 +1,24 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import SearchResults from "./searchresults"; // Import the SearchResults component
+import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 
-export default function Layout(){
-    return(
-        <>
-        <header>
-            <nav>
-                <ul>
-                    <a>Home</a>
-                    <a>Characters</a>
-                </ul>
-            </nav>
-        </header>
-        </>
-    )
+function Layout() {
+  return (
+    <>
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <span>
+                <a href="/"><HomeRoundedIcon/>Homepage</a>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <SearchResults />
+    </>
+  );
 }
+
+export default Layout;
